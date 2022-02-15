@@ -10,7 +10,7 @@
 //     console.log("Invalid");
 // }
 
-// The way of fetching data from another file
+// The way of fetching data or function from another file
 
 // const app = require('./app');
 // console.log(app);

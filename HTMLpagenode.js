@@ -12,14 +12,26 @@ app.get("", (req, res) => {
     res.sendFile(`${public_path}/index.html`);
 })
 
-//this accesss views folder content
+//this access views folder content
 app.get("/profile", (req, res) => {
-    res.render('profile');
+    const user = {
+        name: "kishan sahu",
+        email: "guptakishan492@gmail.com",
+        goal: "software engineer",
+        skills:[
+            'python','javascript','java','c++','dart','swift','php','c','c#','kotlin'
+        ]
+    }
+    res.render('profile', {user});
 })
-
 app.get("/about", (req, res) => {
     res.sendFile(`${public_path}/about.html`);
 })
+
+app.get("/login", (req, res) => {
+    res.render('login');
+})
+
 app.get("*", (req, res) => {
     res.sendFile(`${public_path}/pagenotfound.html`);
 })

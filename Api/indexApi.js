@@ -32,7 +32,7 @@ app.put("/:name", async (req, res) => {
     res.send({result:"update"})
 })
 
-//
+//to delete some data or content in database we use delete method
 
 app.delete("/:id", async (req, res) => {
     console.log(req.params.id);

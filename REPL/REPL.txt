@@ -1,0 +1,5 @@
+REPL stands for Read-Eval-Print-Loop
+
+1.type node in cammond prompt to open repl
+2.now you can use it as basic terminal
+3.if you want to switch in editor mode just type (".editor)
